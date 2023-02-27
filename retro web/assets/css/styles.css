@@ -1,0 +1,156 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Press+Start+2P&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --first-font: 'Kaushan Script', cursive;
+    --second-font: 'Press Start 2P', cursive;
+    --font-size: 1.5rem;
+    --p-size: 1.8rem;
+
+    --first-color: #ff00ae;
+    --second-color: #f57dcd;
+    --third-color: #e391c8;
+}
+
+/*=============== CSS CLASSES ===============*/
+.container{
+    margin-left: 5%;
+    width: 18%;
+    justify-content: center;
+}
+
+/*=============== HEADER & NAV ===============*/
+.img{
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 15rem;
+}
+
+.description{
+    font-family: var(--first-font);
+    color: white;
+    font-size: var(--p-size);
+}
+
+.btn{
+    font-size: var(--font-size);
+    font-family: var(--second-font);
+    width: 200px;
+    height: 70px;
+    background: var(--second-color);
+    border: 0px;
+    position: relative;
+    box-shadow: 
+    inset -4px 2px 1px 1px grey,
+    inset -4px -2px 1px 1px lightgray,
+    inset 4px 0px 1px 1px lightgray; 
+    margin-top: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn:active{
+    top: 5px;
+    box-shadow: 
+    -4px 2px 1px 1px grey,
+    -4px -2px 1px 1px lightgray,
+    4px 0px 1px 1px lightgray;
+}
+
+.btn::after{
+    content: '';
+    background: black;
+    position: absolute;
+    left: -2.5%;
+    top: 0;
+    width: 105%;
+    height: 100%;
+    z-index: -1;
+}
+
+.btn::before{
+    content: '';
+    background: black;
+    position: absolute;
+    left: 0%;
+    top: -5%;
+    width: 100%;
+    height: 113%;
+    z-index: -1;
+}
+
+.date{
+    color: white;
+    font-size: 26px;
+    margin-left: 5.2%;
+}
+/*=============== BODY ===============*/
+.rectangle{
+    display: flex;
+    flex-direction: row;
+}
+
+.fav{
+    margin-top: 1%;
+    width: 25rem;
+    margin-left: 5%;
+}
+
+
+.text{
+    background-color: var(--third-color);
+    color: white;
+    font-size: 22px;
+    width: 60%;
+    margin-left: 170px;
+    text-align: center;
+}
+
+/*=============== PONIES PAGE ===============*/
+.divider{
+    margin-top: 5px;
+}
+
+.imgP{
+    margin-left: 50px;
+    margin-top: 1%;
+    width: 50%;
+    height: 500px;
+}
+
+.names{
+    font-family: var(--first-font);
+    color: white;
+    font-size: var(--p-size);
+    margin-left: 50px;
+}
+
+/*=============== PLAYSET PAGE ===============*/
+.play{
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    margin-top: 2%;
+}
+
+.col{
+    width: 320px;
+}
+
+/*=============== PROMO PAGE ===============*/
+.promoColor{
+    background-color: var(--third-color);
+    color: white;
+    font-size: 22px;
+    width: 60%;
+    margin-left: 170px;
+    text-align: center;
+}
+
+.promo{
+    font-size: 80px;
+}
