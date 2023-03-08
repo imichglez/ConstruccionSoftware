@@ -1,0 +1,14 @@
+{
+    "mov1" : {
+       "name" : "titanic",
+       "genre" : "romance",
+       "year" : 1997,
+       "director" : "James Cameron"
+    },
+     "mov2" : {
+        "name" : "Avatar",
+        "genre" : "action",
+        "year" : 2009,
+        "director" : "James Cameron"
+    }
+}
